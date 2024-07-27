@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    nav {
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(32, 32, 104);
+        color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 5rem 0rem 4rem;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-left: 3rem;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: azure;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+    }
+
+    ul li a:hover {
+        background-color: azure;
+        color: rgb(32, 32, 104);
+    }
+
+    .menu-btn i {
+        display: none;
+    } 
+    .menu-btn i:hover {
+        cursor: pointer;
+    } 
+
+    #click{
+        display: none;
+    }
+    
+    @media (max-width:950px) {
+
+        nav ul {
+            position: fixed;
+            top: 10vh;
+            left: -100%;
+            background-color: rgb(32, 32, 104);
+            width: 100%;
+            height: 100vh;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .menu-btn i {
+            display: block;
+        }
+
+        #click:checked ~ ul{
+            left:0%;
+        }
+
+        #click:checked ~ .menu-btn i:before{
+            content: '\f00d';
+        }
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Adidas</h1>
+        </div>
+        
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+
+
+        </ul>
+    </nav>
+
+</body>
+
+</html>

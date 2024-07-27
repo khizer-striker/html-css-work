@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 0.2rem solid blue;
+            width: 100%;
+            height: 50vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 2rem 4rem;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .container .box {
+            /* border: 0.2rem solid rgb(151, 151, 254); */
+            width: 5rem;
+            height: 2.5rem;
+        }
+
+        .container .boxOne {
+            grid-column: 1/6;
+            width: 100%;
+            background-color: chartreuse;
+            /* border: 0.2rem solid chartreuse; */
+
+        }
+
+        .container .boxTwo {
+            grid-column: 1/6;
+            width: 100%;
+            background-color: rgb(38, 58, 118);
+            /* border: 0.2rem solid chartreuse; */
+
+        }
+
+        .container .boxThree {
+
+            grid-column: 1/6;
+            width: 100%;
+            background-color: rgb(177, 32, 41);
+            /* border: 0.2rem solid chartreuse; */
+
+        }
+
+        .container .boxFour {
+
+            grid-column: 1/6;
+            width: 100%;
+            background-color: rgb(177, 100, 32);
+            /* border: 0.2rem solid chartreuse; */
+
+        }
+
+        /* .container .boxThree{
+            grid-row: 2/4;
+            border: 0.2rem solid rgb(168, 254, 151);
+            align-self:center;
+            justify-self: center;
+
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box boxOne">
+            <h1>Pakola</h1>
+        </div>
+        <div class="box boxTwo">
+            <h1>Pepsi</h1>
+        </div>
+        <div class="box boxThree">
+            <h1>Coca Cola</h1>
+        </div>
+        <div class="box boxFour">
+            <h1>Fanta</h1>
+        </div>
+       
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section{
+        width:100vw;
+        height:100vh;
+        border: 0.2rem solid goldenrod;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    section .heading{
+        width:100%;
+        height:10%;
+        border: 0.2rem solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    } 
+    .heading h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .container{
+        width: 100%;
+        height: 80%;
+        border: 0.2rem solid rgb(13, 197, 190);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:1rem
+
+    }
+
+    .container .box{
+        border: 0.2rem solid rgb(130, 10, 10);
+        width:30%;
+        height: 40%;
+
+
+    }
+
+    /* @media (max-width:600px){
+        .container{
+            width:50%
+        }
+        .container .box{
+            width:30%;
+            height: 40%;
+
+        }
+    } */
+
+    
+
+</style>
+<body>
+
+    <section>
+        <div class="heading">
+            <h1>Features</h1>
+        </div>
+
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+
+    </section>
+
+    
+
+    
+
+
+
+    
+</body>
+</html>

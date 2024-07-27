@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+</head>
+
+<style>
+
+    section{
+        display: flex;
+        
+    }
+
+    section .text-part{
+        border: 0.2rem solid green;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section .image-part{
+        border: 0.2rem solid rgb(90, 10, 19);
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .image-part img{
+        width: 30rem;
+    }
+    .text-part h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: red;
+        
+    }
+
+    @media(max-width:1200px){
+        section{
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+        }
+        section .text-part{
+            width: 100vw;
+        }
+
+        section .image-part{
+            width: 100vw;
+        }
+        
+        
+    }
+</style>
+<body>
+
+    <main>
+        <section>
+            <div class="text-part">
+            <h1>Hamburger Feast</h1> 
+            </div>
+
+            <div class="image-part">
+               <img src="./asset/Hamburger.png" alt="boy eating hamburger">
+            </div>
+
+            
+
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border: 0.2rem solid seagreen;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .container .caption{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.2rem solid salmon;
+        
+    }
+
+    .container .boxes{
+        width:70%;
+        min-height: 70%;
+        border: 0.2rem solid peru;
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fill,3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        padding:5rem
+
+    }
+
+    .boxes .box{
+        border: 0.2rem solid rgb(169, 198, 25);
+        width: 100%;
+
+
+    }
+
+    
+
+    
+</style>
+
+<body>
+
+    <div class="container">
+       
+        <div class="caption">
+            <h1>Features</h1>
+        </div>
+
+      <div class="boxes">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+
+      </div>
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Hero</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-sec{
+        background-image: url(./asset/bg.jpg);
+        background-position: center center;
+        background-size: max(2500px,100vw);
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+    }
+
+    .hero-sec .layer{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.64;
+        position: absolute;
+        top: 0;
+    }
+    .hero-sec nav{
+        position: relative;
+        top: 0;
+        z-index:1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+       
+        width: 80vw;
+        height: 15vh;
+    }
+
+    nav .sign-in-btn{
+        padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+        color: white;
+        background-color: red;
+        border:none;
+    }
+
+    .hero-sec .text-part{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:0;
+        /* border: 0.2rem solid red; */
+    }
+    .text-part h1{
+        text-align: center;
+        /* margin-top: 1rem; */
+        
+    }
+    .text-part p{
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+
+
+</style>
+<body>
+  
+    <div class="hero-sec">
+
+        <nav>
+            <img src="./asset/netflix-logo.svg" width="120px" alt="logo">
+
+            <button class="sign-in-btn">Sign In</button>
+
+        </nav>
+        <div class="layer"></div>
+
+        <div class="text-part">
+
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+             
+        </div>
+
+
+    </div>
+
+    
+    
+</body>
+</html>

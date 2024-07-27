@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    footer{
+        /* border:0.2rem solid greenyellow ; */
+        max-width: 100%;
+        min-height: 40vh;
+        background-color: black;
+        color: white;
+        display: flex;
+       
+       
+
+    }
+
+    footer .part-one{
+        /* border: 0.2rem solid gold; */
+        width: 50vw;
+        display: flex;
+
+    }
+
+    footer .part-two{
+       /* border:0.2rem solid rgb(237, 80, 22); */
+       width: 50vw;
+       display: flex;
+
+    }
+
+    .part-one ul{
+        /* border: 0.2rem solid blue; */
+        width:50%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .part-two ul{
+        /* border: 0.2rem solid palevioletred; */
+        width:50%;
+        list-style:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul li{
+        text-decoration: underline;
+    }
+
+    @media(max-width:1050px){
+        footer{
+            flex-wrap: wrap;
+        }
+        footer .part-one{
+            width: 100vw;
+            
+        }
+        footer .part-two{
+            width: 100vw;
+        }
+        ul li{
+            padding: 0.5rem;
+        }
+    } 
+
+</style>
+
+<body>
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima. -->
+
+    <footer>
+
+        <div class="part-one">
+            <ul>
+                <li>Questions? Contact us. </li>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+                <li>Netflix Pakistan</li>
+
+            </ul>
+
+            <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+                <li>Legal Notices</li>
+            </ul>
+
+        </div>
+
+        <div class="part-two">
+
+            <ul>
+                <li>Account</li>
+                <li>Ways to Watch</li>
+                <li>Corporate Information</li>
+                <li>Only on Netflix</li>
+            </ul>
+
+            <ul>
+                <li>Media Center</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+                
+            </ul>
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
